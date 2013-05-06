@@ -1,0 +1,33 @@
+{
+   "servers": [
+      {
+         "host": "0.0.0.0",
+         "port": 8080,
+         "options": {
+            "labels": ["http"]
+         }
+      }
+   ],
+   "plugins": {
+      "furball": {
+         "version": "/version",
+         "plugins": "/plugins"
+      },
+      "good": [
+         {"ext": true},
+         {
+            "subscribers": {
+               "console": ["request", "log"]
+            }
+         }
+      ],
+      "osi-core": {
+        "resources": [
+          {"name": "osi-core", "version": "0.0.0", "path": "lib/home.js"}
+        ]
+      }
+   },
+   "permissions": {
+      "ext": true
+   }
+}

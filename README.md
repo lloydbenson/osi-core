@@ -1,4 +1,1 @@
-osi-server
-==========
-
-Open Source Infrastructure Server
+OSI Server Readme

@@ -113,9 +113,9 @@ status)
  status
  ;;
 restart)
- stop $0
+ $0 stop
  sleep 5
- start $0
+ $0 start
  ;;
 *)
  echo $"Usage: $0 {start|stop|status|kill|restart}"

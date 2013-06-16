@@ -10,9 +10,9 @@
   "author": "Lloyd Benson",
   "license": "BSD",
   "dependencies": {
-    "hapi": "1.0.x",
-    "handlebars": "1.0.x",
-    "furball": "0.3.x",
-    "good": "0.3.x"
+    "hapi": "*",
+    "handlebars": "*",
+    "furball": "*",
+    "good": "*"
   }
 }

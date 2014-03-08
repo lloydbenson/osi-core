@@ -9,7 +9,7 @@
        </script>
     </head>
     <body>
-    {{message}}<br>
+    <font color=red>{{message}}</font><br>
     <form name="host" action="/host" method="post">
     <table>
     <tr>
@@ -19,7 +19,7 @@
     <td>
     <select name="profile">
     <option></option>
-    <option>{{profile}}</option>
+    <option {{#if profile}}selected{{/if}}>{{profile}}</option>
     </select>
     </td>
     </tr>

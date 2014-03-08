@@ -1,8 +1,8 @@
 {
-  "name": "osi-server",
+  "name": "osi-core",
   "version": "0.0.0",
-  "description": "Open Source Infrastructure Server",
-  "main": "lib/home.js",
+  "description": "Open Source Infrastructure Core",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +10,9 @@
   "author": "Lloyd Benson",
   "license": "BSD",
   "dependencies": {
-    "hapi": "*",
-    "handlebars": "*",
-    "furball": "*",
-    "good": "*"
+    "hapi": "2.x.x",
+    "handlebars": "1.x.x",
+    "furball": "1.x.x",
+    "good": "1.x.x"
   }
 }

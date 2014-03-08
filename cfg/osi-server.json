@@ -21,9 +21,9 @@
             }
          }
       ],
-      "osi-core": {
+      "osi-web": {
         "resources": [
-          {"name": "osi-core", "version": "0.0.0", "path": "lib/home.js"}
+          {"name": "osi-web", "version": "0.0.0", "path": "lib/home.js"}
         ]
       }
    },

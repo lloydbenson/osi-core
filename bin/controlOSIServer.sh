@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OSI_HOME=~/app/osi-server
+OSI_HOME=~/app/osi-core
 OSI_NODE_MODULES_HOME=${OSI_HOME}/node_modules
 OSI_CFG=${OSI_HOME}/cfg/osi-server.json
 OSI_LOG=${OSI_HOME}/log/osi-server.log
@@ -113,9 +113,9 @@ status)
  status
  ;;
 restart)
- $0 stop
+ stop $0
  sleep 5
- $0 start
+ start $0
  ;;
 *)
  echo $"Usage: $0 {start|stop|status|kill|restart}"

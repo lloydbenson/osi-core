@@ -9,6 +9,6 @@
    "init_dir": "init",
    "bootiso_dir": "bootiso",
    "server": "10.80.80.50",
-   "roothash": "roothash",
+   "roothash": "$1$hX8JqTOt$lQfFYlRfR6/EKOken11Sq.",
    "timezone": "America/Chicago"
 }

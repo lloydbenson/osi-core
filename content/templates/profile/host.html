@@ -1,0 +1,58 @@
+<html>
+    <head>
+    <title>{{title}}</title>
+    </head>
+    <body>
+    <font color=red>{{message}}</font><br>
+    <form name="profile" action="/profile/host" method="post">
+    <table>
+    <tr>
+    <td>
+    Profile Name
+    </td>
+    <td>
+    <input type="text" name="name" value="{{name}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Network Profile
+    </td>
+    <td>
+    <select name="network">
+    <option></option>
+    <option {{#if network}}selected{{/if}}>{{network}}</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    MemDisk Profile
+    </td>
+    <td>
+    <select name="memdisk">
+    <option></option>
+    <option {{#if memdisk}}selected{{/if}}>{{memdisk}}</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    OS Profile
+    </td>
+    <td>
+    <select name="os">
+    <option></option>
+    <option {{#if os}}selected{{/if}}>{{os}}</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td colspan=2>
+    <input type="submit" value="Submit">
+    </td>
+    </tr>
+    </table>
+    </form>
+    </body>
+</html>

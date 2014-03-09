@@ -1,0 +1,8 @@
+{
+   "name": "default",
+   "profile": {
+      "network": "default",
+      "memdisk": "default",
+      "os": "default"
+   }
+}

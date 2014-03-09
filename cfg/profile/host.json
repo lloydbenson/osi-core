@@ -1,0 +1,10 @@
+{
+   "title": "Profile Info",
+   "name": "default",
+   "type":"host",
+   "profile": {
+       "network": "default",
+       "os": "default",
+       "memdisk": "default"
+   }
+}

@@ -1,7 +1,9 @@
 {
    "title": "OSI Home",
    "links": [
-               {"name": "Admin Config", "url": "/admin/config"}
+               {"name": "Admin Config", "url": "/admin/config"},
+               {"name": "Add Host", "url": "/host"},
+               {"name": "Add Profile", "url": "/profile"}
             ]
 }
 

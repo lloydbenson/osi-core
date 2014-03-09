@@ -1,0 +1,66 @@
+<html>
+    <head>
+    <title>{{title}}</title>
+    </head>
+    <body>
+    <font color=red>{{message}}</font><br>
+    <form name="profile" action="/profile/os" method="post">
+    <table>
+    <tr>
+    <td>
+    Profile Name
+    </td>
+    <td>
+    <input type="text" name="name" value="{{name}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    OS
+    </td>
+    <td>
+    <select name="os_vendor">
+    <option>{{os_vendor}}</option>
+    </select>
+    <select name="os_name">
+    <option>{{os_name}}</option>
+    </select>
+    <select name="os_version">
+    <option>{{os_version}}</option>
+    </select>
+    <select name="os_arch">
+    <option>{{os_arch}}</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Kernel Update
+    </td>
+    <td>
+    <input type="checkbox" name="update_kernel" {{#if update_kernel}}checked{{/if}}>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    RPM Update
+    </td>
+    <td>
+    <input type="checkbox" name="update_rpm" {{#if update_rpm}}checked{{/if}}>
+    <tr>
+    <td>
+    Packages
+    </td>
+    <td>
+    <textarea name="package">{{package}}</textarea>
+    </td>
+    </tr>
+    <tr>
+    <td colspan=2>
+    <input type="submit" value="Submit">
+    </td>
+    </tr>
+    </table>
+    </form>
+    </body>
+</html>

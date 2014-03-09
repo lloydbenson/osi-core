@@ -1,0 +1,75 @@
+<html>
+    <head>
+    <title>{{title}}</title>
+    </head>
+    <body>
+    <font color=red>{{message}}</font><br>
+    <form name="profile" action="/profile/memdisk" method="post">
+    <table>
+    <tr>
+    <td>
+    Profile Name
+    </td>
+    <td>
+    <input type="text" name="name" value="{{name}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Memory Size
+    </td>
+    <td>
+    <input type="text" name="memory" value="{{memory}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Root Disk
+    </td>
+    <td>
+    <select name="rootdisk">
+    <option></option>
+    <option {{#if rootdisk}}selected{{/if}}>{{rootdisk}}</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Hard Drive Size
+    </td>
+    <td>
+    <input type="text" name="hdsize" value="{{hdsize}}">
+    </td>
+    </tr>
+<!--
+PARTITIONS="/tmp /boot / swap"
+PARTITION_TMP_SIZE=2048
+PARTITION_BOOT_SIZE=1024
+PARTITION_ROOT_SIZE=15260
+PARTITION_SWAP_SIZE=2048
+-->
+    {{#partition}}
+    <tr>
+    <td>
+    Partition {{dir}}
+    </td>
+    <td>
+    <input type="text" name="size" value="{{size}}">
+    <select name="filesystem">
+    <option></option>
+    <option {{#if type}}selected{{/if}}>{{type}}</option>
+    </select>
+    </td>
+    </tr>
+    </td>
+    </tr>
+    {{/partition}}
+    <tr>
+    <td colspan=2>
+    <input type="submit" value="Submit">
+    </td>
+    </tr>
+    </table>
+    </form>
+    </body>
+</html>

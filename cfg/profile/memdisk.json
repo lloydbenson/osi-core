@@ -1,0 +1,13 @@
+{
+   "title": "Memdisk Info",
+   "name": "default",
+   "memory": 2048,
+   "rootdisk": "sda",
+   "hdsize": 20480,
+   "partition": [
+       { "dir": "/boot", "type": "ext4", "size": 512 },
+       { "dir": "/tmp", "type": "ext4", "size": 2048 },
+       { "dir": "/", "type": "ext4", "size": 8192 },
+       { "dir": "/var", "type": "ext4", "size": 4096 }
+    ]
+}

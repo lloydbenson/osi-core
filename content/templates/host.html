@@ -1,17 +1,22 @@
 <html>
     <head>
        <title>{{title}}</title>
-       <script type="text/javascript">
-       function loadHost() {
-          document.host.action = "/host?hostname="+document.host.hostname.value+"&domainname="+document.host.domainname.value
-          document.host.submit()
-       }
-       </script>
     </head>
     <body>
     <font color=red>{{message}}</font><br>
     <form name="host" action="/host" method="post">
     <table>
+    <tr>
+    <td>
+    Hostname
+    </td>
+    <td>
+    <input type="text" name="host" value="{{host}}">.
+    <select name="domain" onchange="">
+    <option>{{domain}}</option>
+    </select>
+    </td>
+    </tr>
     <tr>
     <td>
     Profile
@@ -25,6 +30,22 @@
     </tr>
     <tr>
     <td>
+    IP
+    </td>
+    <td>
+    <input type="text" name="ip" value="{{ip}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    MAC
+    </td>
+    <td>
+    <input type="text" name="macaddress" value="{{macaddress}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
     Active
     </td>
     <td>
@@ -32,157 +53,8 @@
     </td>
     </tr>
     <tr>
-    <td>
-    Server Type
-    </td>
-    <td>
-    <input type="text" name="servertype" value="servertype">
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Host Type
-    </td>
-    <td>
-    <input type="text" name="hosttype" value="{{hosttype}}">
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Hostname
-    </td>
-    <td>
-    <input type="text" name="hostname" value="{{hostname}}">.
-    <select name="domainname" onchange="">
-    <option>{{domainname}}</option>
-    </select>
-    <input type="button" onClick="loadHost()" value="Load">
-    </td>
-    </tr>
-    <tr>
-    <td>
-    OS
-    </td>
-    <td>
-    <select name="os_vendor">
-    <option>{{os_vendor}}</option>
-    </select>
-    <select name="os_name">
-    <option>{{os_name}}</option>
-    </select>
-    <select name="os_version">
-    <option>{{os_version}}</option>
-    </select>
-    <select name="os_arch">
-    <option>{{os_arch}}</option>
-    </select>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Disk
-    </td>
-    <td>
-    <input type="text" name="disk" value="{{disk}}">
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Partition Type
-    </td>
-    <td>
-    <input type="text" name="partitiontype" value="{{partitiontype}}">
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Memory
-    </td>
-    <td>
-    <input type="text" name="memory" value="{{memory}}">
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Network
-    </td>
-    <td>
-    <select name="network">
-    <option>dhcp</option>
-    <option>static</option>
-    </select>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Boot Device
-    </td>
-    <td>
-    <input type="text" name="bootdevice" value="{{bootdevice}}">
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Auto Negotiation
-    </td>
-    <td>
-    <input type="checkbox" name="autoneg" {{#if autoneg}}checked{{/if}}>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Build Method
-    </td>
-    <td>
-    <select name="buildmethod">
-    <option>http</option>
-    <option>nfs</option>
-    </select>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Email
-    </td>
-    <td>
-    <input type="text" name="email" value="{{email}}">
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Kernel Update
-    </td>
-    <td>
-    <input type="checkbox" name="kernel" {{#if kernel}}checked{{/if}}>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Update
-    </td>
-    <td>
-    <input type="checkbox" name="update" {{#if update}}checked{{/if}}>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Third Party
-    </td>
-    <td>
-    <input type="text" name="thirdparty" value="{{thirdparty}}">
-    </td>
-    </tr>
-    <tr>
-    <td>
-    Packages
-    </td>
-    <td>
-    <textarea name="packages">{{packages}}</textarea>
-    </td>
-    </tr>
-    <tr>
     <td colspan=2>
-    <input type="submit" name="save" value="save">
+    <input type="submit" value="Submit">
     </td>
     </tr>
     </table>

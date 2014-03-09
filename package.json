@@ -10,9 +10,14 @@
   "author": "Lloyd Benson",
   "license": "BSD",
   "dependencies": {
-    "hapi": "2.x.x",
-    "handlebars": "1.x.x",
+    "boom": "2.x.x",
     "furball": "1.x.x",
-    "good": "1.x.x"
+    "good": "1.x.x",
+    "handlebars": "1.x.x",
+    "hapi": "2.x.x",
+    "joi": "2.x.x"
+  },
+  "devDependencies": {
+    "lab": "1.x.x"
   }
 }

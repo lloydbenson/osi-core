@@ -1,25 +1,7 @@
 {
    "title": "Server Info",
+   "host":"hostname",
+   "domain": "dns.com",
    "profile": "theprofile",
-   "active": "on",
-   "servertype": "servertype",
-   "hosttype": "hosttype",
-   "hostname":"hostname",
-   "domainname": "dns.com",
-   "os_vendor":"redhat",
-   "os_name":"centos",
-   "os_version":"6.2",
-   "os_arch":"x86_64",
-   "disk": "disk",
-   "partitiontype": "partitiontype",
-   "memory": "1024m",
-   "network": "dhcp",
-   "bootdevice": "eth0",
-   "autoneg": "on",
-   "buildmethod": "http",
-   "email": "lloyd.benson@gmail.com",
-   "kernel": "on",
-   "update": "on",
-   "thirdparty": "thirdparty",
-   "packages": "package1"
+   "active": true
 }

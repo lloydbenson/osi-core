@@ -1,0 +1,8 @@
+{
+   "host": "blah",
+   "domain": "domain.com",
+   "profile": "theprofile",
+   "macaddress": "00:00:00:00:00:00",
+   "ip": "10.80.80.69",
+   "active": true
+}

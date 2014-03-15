@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <title>{{title}}</title>
+    </head>
+    <body>
+    <font color=red>{{message}}</font><br>
+    <form name="profile" action="/profile/network" method="post">
+    <table>
+    <tr>
+    <td>
+    Profile Name
+    </td>
+    <td>
+    <input type="text" name="name" value="{{name}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Gateway
+    </td>
+    <td>
+    <input type="text" name="gateway" value="{{gateway}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Netmask
+    </td>
+    <td>
+    <input type="text" name="netmask" value="{{netmask}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Boot Device
+    </td>
+    <td>
+    <input type="text" name="bootdev" value="{{bootdev}}">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    Protocol
+    </td>
+    <td>
+    <select name="protocol">
+    <option></option>
+    <option {{#if protocol}}selected{{/if}}>{{protocol}}</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    DNS Servers
+    </td>
+    <td>
+    <input type="text" name="dns" value="{{dns}}">
+    </td>
+    </tr>
+    <tr>
+    <td colspan=2>
+    <input type="submit" value="Submit">
+    </td>
+    </tr>
+    </table>
+    </form>
+    </body>
+</html>

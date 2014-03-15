@@ -1,0 +1,9 @@
+{
+   "title": "Network Info",
+   "name": "default",
+   "gateway": "10.80.80.1",
+   "netmask": "255.255.255.0",
+   "bootdev": "eth0",
+   "protocol": "static",
+   "dns": [ "10.80.80.1", "10.80.80.5" ]
+}

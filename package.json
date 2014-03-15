@@ -11,6 +11,7 @@
   "license": "BSD",
   "dependencies": {
     "boom": "2.x.x",
+    "bower": "1.x.x",
     "furball": "1.x.x",
     "good": "1.x.x",
     "handlebars": "1.x.x",

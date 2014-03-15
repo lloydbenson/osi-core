@@ -1,0 +1,20 @@
+{
+  "name": "osi-core",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/lloydbenson/osi-core",
+  "authors": [
+    "lloyd <lloyd@opensourceinfrastructure.com>"
+  ],
+  "dependencies": {
+    "bootstrap": "1.x.x"
+  },
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "content/bower_components",
+    "test"
+  ]
+}

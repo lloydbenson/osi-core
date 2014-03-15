@@ -1,0 +1,14 @@
+{
+   "name": "centos",
+   "os": {
+      "vendor": "redhat",
+      "name": "centos",
+      "version": "6.4",
+      "arch": "x86_64",
+      "package": [ "@core" ]
+   },
+   "update": {
+      "kernel": true,
+      "rpm": true
+    }
+}

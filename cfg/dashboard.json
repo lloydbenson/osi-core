@@ -1,0 +1,12 @@
+{
+   "title": "OSI Dashboard",
+   "links": [
+               {"name": "Admin Config", "url": "/admin/config"},
+               {"name": "Add Host", "url": "/host"},
+               {"name": "Add Host Profile", "url": "/profile/host"},
+               {"name": "Add MemDisk Profile", "url": "/profile/memdisk"},
+               {"name": "Add OS Profile", "url": "/profile/os"},
+               {"name": "Add Network Profile", "url": "/profile/network"}
+            ]
+}
+
